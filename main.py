@@ -30,7 +30,7 @@ if __name__ == '__main__':
     medical_conditions = ['None', 'Heart Disease', 'Diabetes']
 
     # File to Read From
-    file_name_for_given_users = 'archive/abridgedUsers.csv'
+    file_name_for_given_users = 'archive/users.csv'
 
     # Tables to Write To
     file_name_for_persons = 'archive/Person.csv'
