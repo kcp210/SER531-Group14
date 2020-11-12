@@ -38,8 +38,8 @@ if __name__ == '__main__':
     file_name_for_person_details = 'archive/PersonDetails.csv'
 
     # Headers
-    event_headers = ['Name', 'Start Time', 'End Time', 'Attendees']
-    person_headers = ['Fname', 'Lname', 'Phone', 'Gender', 'DOB']
+    event_headers = ['ID', 'Name', 'Start Time', 'End Time', 'Attendee']
+    person_headers = ['ID', 'Fname', 'Lname', 'Phone', 'Gender', 'DOB']
     person_details_headers = ['Fname', 'Lname', 'DOB', 'Medical Conditions']
 
     # Read in Persons
@@ -53,13 +53,14 @@ if __name__ == '__main__':
             if row[0] == empty_cell:
                 break
             else:
+                person_id = row[0]
                 first_name = row[1]
                 last_name = row[2]
                 gender = row[3]
                 dob = row[4]
                 phone_number = row[5]
 
-                new_person = Person(first_name, last_name, phone_number, gender, dob)
+                new_person = Person(person_id, first_name, last_name, phone_number, gender, dob)
 
                 person_array.append(new_person)
 
@@ -70,7 +71,11 @@ if __name__ == '__main__':
 
     # Create Events
     event_array = []
+    id_counter = 0
     for i in range(len(event_names)):
+        event_id = id_counter
+        id_counter += 1
+
         event_name = event_names[i]
         event_start_time = event_start_times[i]
         event_end_time = event_end_times[i]
@@ -79,9 +84,9 @@ if __name__ == '__main__':
         for person in person_array:
             did_attend = random.randint(0, 1)
             if did_attend:
-                attendees.append(person.first_name + ' ' + person.last_name)
+                attendees.append(person.person_id)
 
-        new_event = Event(event_name, event_start_time, event_end_time, attendees)
+        new_event = Event(event_id, event_name, event_start_time, event_end_time, attendees)
         event_array.append(new_event)
 
     # Write Event CSV File
@@ -89,8 +94,9 @@ if __name__ == '__main__':
         writer = csv.writer(csv_file)
         writer.writerow(event_headers)
         for event in event_array:
-            row = event.to_event_csv_row()
-            writer.writerow(row)
+            for person in event.persons:
+                row = event.to_event_csv_row(person)
+                writer.writerow(row)
 
     # Write Person CSV File
     with open(file_name_for_persons, "w") as csv_file:

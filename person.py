@@ -1,5 +1,6 @@
 class Person:
-    def __init__(self, first_name, last_name, phone_number, gender, dob):
+    def __init__(self, person_id, first_name, last_name, phone_number, gender, dob):
+        self.person_id = person_id
         self.first_name = first_name
         self.last_name = last_name
         self.phone_number = phone_number
@@ -11,7 +12,7 @@ class Person:
         self.medical_conditions.append(medical_condition)
 
     def to_person_csv_row(self):
-        ret_val = [self.first_name, self.last_name, self.phone_number, self.gender, self.dob]
+        ret_val = [self.person_id, self.first_name, self.last_name, self.phone_number, self.gender, self.dob]
         return ret_val
 
     def to_person_details_csv_row(self):

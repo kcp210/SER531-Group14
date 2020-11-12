@@ -1,13 +1,13 @@
 Fname,Lname,DOB,Medical Conditions
 John,Morris,7/14/86,Heart Disease
 Jim,Johnson,5/28/70,Heart Disease
-Joe,Huggins,6/1/76,Heart Disease
-James,Mcevoy,4/27/51,Heart Disease
-Franklin,Lloyd,10/21/75,Heart Disease
-Tommy,Mata,5/7/87,Diabetes
-Matt,Strong,9/14/69,Heart Disease
+Joe,Huggins,6/1/76,None
+James,Mcevoy,4/27/51,Diabetes
+Franklin,Lloyd,10/21/75,Diabetes
+Tommy,Mata,5/7/87,Heart Disease
+Matt,Strong,9/14/69,None
 Henry,Finley,3/13/11,Heart Disease
-Michael,Penn,6/3/86,Heart Disease
+Michael,Penn,6/3/86,Diabetes
 Tony,Dole,7/23/01,Diabetes
 Zachery,Lorna,12/27/54,Heart Disease
-Gary,Shook,8/13/01,Diabetes
+Gary,Shook,8/13/01,None
