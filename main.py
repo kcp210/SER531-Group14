@@ -53,7 +53,7 @@ if __name__ == '__main__':
             if row[0] == empty_cell:
                 break
             else:
-                person_id = row[0]
+                person_id = "Person" + str(row[0])
                 first_name = row[1]
                 last_name = row[2]
                 gender = row[3]
@@ -86,7 +86,7 @@ if __name__ == '__main__':
             if did_attend:
                 attendees.append(person.person_id)
 
-        new_event = Event(event_id, event_name, event_start_time, event_end_time, attendees)
+        new_event = Event("Event" + str(event_id), event_name, event_start_time, event_end_time, attendees)
         event_array.append(new_event)
 
     # Write Event CSV File
