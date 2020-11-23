@@ -1,3 +1,4 @@
+import View.MainFrame;
 import org.apache.jena.query.*;
 
 public class Main {
@@ -6,6 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        MainFrame mainFrame = new MainFrame("Event Contact Tracing Application");
+    }
+
+    public void queryTest() {
         String spaqlQuery = "prefix owl: <http://www.w3.org/2002/07/owl#>\n" +
                 "prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
                 "\n" +
