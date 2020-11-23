@@ -7,8 +7,10 @@ class Person:
         self.gender = gender
         self.dob = dob
         self.medical_conditions = []
+        self.medical_condition_id = -1
 
-    def add_medical_conditions(self, medical_condition):
+    def add_medical_conditions(self, medical_condition_id, medical_condition):
+        self.medical_condition_id = medical_condition_id
         self.medical_conditions.append(medical_condition)
 
     def to_person_csv_row(self):
@@ -16,5 +18,5 @@ class Person:
         return ret_val
 
     def to_person_details_csv_row(self):
-        ret_val = [self.first_name, self.last_name, self.dob, '|'.join(self.medical_conditions)]
+        ret_val = [self.person_id, self.first_name, self.last_name, self.dob, self.medical_condition_id, '|'.join(self.medical_conditions)]
         return ret_val

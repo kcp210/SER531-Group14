@@ -30,17 +30,17 @@ if __name__ == '__main__':
     medical_conditions = ['None', 'Heart Disease', 'Diabetes']
 
     # File to Read From
-    file_name_for_given_users = 'archive/users.csv'
+    file_name_for_given_users = 'data/users.csv'
 
     # Tables to Write To
-    file_name_for_persons = 'archive/Person.csv'
-    file_name_for_events = 'archive/Event.csv'
-    file_name_for_person_details = 'archive/PersonDetails.csv'
+    file_name_for_persons = 'data/Person.csv'
+    file_name_for_events = 'data/Event.csv'
+    file_name_for_person_details = 'data/PersonDetails.csv'
 
     # Headers
     event_headers = ['ID', 'Name', 'Start Time', 'End Time', 'Attendee']
     person_headers = ['ID', 'Fname', 'Lname', 'Phone', 'Gender', 'DOB']
-    person_details_headers = ['Fname', 'Lname', 'DOB', 'Medical Conditions']
+    person_details_headers = ['Person ID', 'Fname', 'Lname', 'DOB','Medical Condition ID', 'Medical Conditions']
 
     # Read in Persons
     person_array = []     # Used to Hold Data
@@ -53,7 +53,7 @@ if __name__ == '__main__':
             if row[0] == empty_cell:
                 break
             else:
-                person_id = row[0]
+                person_id = "Person" + str(row[0])
                 first_name = row[1]
                 last_name = row[2]
                 gender = row[3]
@@ -66,8 +66,9 @@ if __name__ == '__main__':
 
     # Tag Persons with Medical Conditions
     for person in person_array:
-        medical_condition = medical_conditions[random.randint(0, len(medical_conditions) - 1)]
-        person.add_medical_conditions(medical_condition)
+        id = random.randint(0, len(medical_conditions) - 1)
+        medical_condition = medical_conditions[id]
+        person.add_medical_conditions(id, medical_condition)
 
     # Create Events
     event_array = []
@@ -86,7 +87,7 @@ if __name__ == '__main__':
             if did_attend:
                 attendees.append(person.person_id)
 
-        new_event = Event(event_id, event_name, event_start_time, event_end_time, attendees)
+        new_event = Event("Event" + str(event_id), event_name, event_start_time, event_end_time, attendees)
         event_array.append(new_event)
 
     # Write Event CSV File
