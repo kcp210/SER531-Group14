@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/macattack/Repos/SER531/SER531-Group14/venv"
+VIRTUAL_ENV="/Users/macattack/Repos/SER531/SER531-Group14/DataGeneration/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

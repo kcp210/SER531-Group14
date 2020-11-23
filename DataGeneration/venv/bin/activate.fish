@@ -29,7 +29,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/macattack/Repos/SER531/SER531-Group14/venv"
+set -gx VIRTUAL_ENV "/Users/macattack/Repos/SER531/SER531-Group14/DataGeneration/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

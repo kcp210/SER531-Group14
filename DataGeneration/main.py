@@ -30,12 +30,12 @@ if __name__ == '__main__':
     medical_conditions = ['None', 'Heart Disease', 'Diabetes']
 
     # File to Read From
-    file_name_for_given_users = 'data/users.csv'
+    file_name_for_given_users = '../data/users.csv'
 
     # Tables to Write To
-    file_name_for_persons = 'data/Person.csv'
-    file_name_for_events = 'data/Event.csv'
-    file_name_for_person_details = 'data/PersonDetails.csv'
+    file_name_for_persons = '../data/Person.csv'
+    file_name_for_events = '../data/Event.csv'
+    file_name_for_person_details = '../data/PersonDetails.csv'
 
     # Headers
     event_headers = ['ID', 'Name', 'Start Time', 'End Time', 'Attendee']
