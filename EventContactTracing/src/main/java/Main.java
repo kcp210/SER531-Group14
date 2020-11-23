@@ -3,11 +3,14 @@ import org.apache.jena.query.*;
 
 public class Main {
 
-    static String serviceEndpoint = "http://localhost:3030/TestDataset/query";
+    //static String serviceEndpoint = "http://localhost:3030/TestDataset/query";
+    static String serviceEndpoint = "http://ec2-34-205-141-114.compute-1.amazonaws.com:3030/SED/query";
 
     public static void main(String[] args) {
 
         MainFrame mainFrame = new MainFrame("Event Contact Tracing Application");
+        Main main = new Main();
+        main.queryTest();
     }
 
     public void queryTest() {
