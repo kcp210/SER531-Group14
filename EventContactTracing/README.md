@@ -13,10 +13,12 @@ Upload the EventOnt.owl file from src/main/resources to the server under dataset
  then hit upload now.
  
 Open the Event Contact tracing application in your IDE and run the main method in Main.java
-
-If you have errors that your IDE cannot find Apache Jena, download the Apache Jena jars from 
-https://jena.apache.org/download/, unzip them, then add the jars in the lib/ directory as 
-dependencies in your project. In IntelliJ, you can do this by going to File -> Project Structure
- -> Modules -> Dependencies and then clicking on the plus button and add the path to the jars.
  
  The application should output the three classes, MedicalCondition, Event and Person in the console.
+ 
+ Note: If you have errors that your IDE cannot find Apache Jena, be sure you sync the pom.xml 
+ file with your project.You can do this manually by running `mvn package` Alternatively, you
+ can download the 3.16.0 Apache Jena jars from https://jena.apache.org/download/, unzip them, 
+ then add the jars in the lib/ directory as dependencies in your project. In IntelliJ, you can 
+ do this by going to File -> Project Structure -> Modules -> Dependencies and then clicking on 
+ the plus button and add the path to the jars.
