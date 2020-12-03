@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology"
+     xml:base="http://www.semanticweb.org/SER531/Group14/ontologies/2020/10/medical-ontology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology">
+     ontologyIRI="http://www.semanticweb.org/SER531/Group14/ontologies/2020/10/medical-ontology">
     <Prefix name="" IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -13,106 +13,106 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#MedicalCondition"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#MedicalCondition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Person"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#Person"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasMedicalCondition"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasMedicalCondition"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasDateOfBirth"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasDateOfBirth"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasFirstName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasFirstName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasId"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasId"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasLastName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasLastName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasMedicalName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasMedicalName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasName"/>
     </Declaration>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasMedicalCondition"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasMedicalCondition"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasMedicalCondition"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasMedicalCondition"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasMedicalCondition"/>
-        <Class IRI="#MedicalCondition"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasMedicalCondition"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#MedicalCondition"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasDateOfBirth"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasDateOfBirth"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasFirstName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasFirstName"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasId"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasId"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasLastName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasLastName"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasMedicalName"/>
-        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasMedicalName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasName"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasName"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasDateOfBirth"/>
-        <Class IRI="#Person"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasDateOfBirth"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasFirstName"/>
-        <Class IRI="#Person"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasFirstName"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasId"/>
-        <Class IRI="#Person"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasId"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasLastName"/>
-        <Class IRI="#Person"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasLastName"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasMedicalName"/>
-        <Class IRI="#MedicalCondition"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasMedicalName"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#MedicalCondition"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="#hasDateOfBirth"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasDateOfBirth"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasFirstName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasFirstName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasId"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasId"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasLastName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasLastName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasMedicalName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/medical-ontology#hasMedicalName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
 </Ontology>

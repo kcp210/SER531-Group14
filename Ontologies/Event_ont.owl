@@ -1,99 +1,99 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology"
+     xml:base="http://www.semanticweb.org/SER531/Group14/ontologies/2020/10/event-ontology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology">
-    <Prefix name="" IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/untitled-ontology-11"/>
+     ontologyIRI="http://www.semanticweb.org/SER531/Group14/ontologies/2020/10/event-ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Event"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#Event"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Person"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#Person"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasAttendee"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasAttendee"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasEndTime"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasEndTime"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasEventName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasEventName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasId"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasId"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasStartTime"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasStartTime"/>
     </Declaration>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasAttendee"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasAttendee"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasAttendee"/>
-        <Class IRI="#Event"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasAttendee"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasAttendee"/>
-        <Class IRI="#Person"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasAttendee"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#Person"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasEndTime"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasEndTime"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasEventName"/>
-        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasEventName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasName"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasName"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hasStartTime"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasStartTime"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasEndTime"/>
-        <Class IRI="#Event"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasEndTime"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#Event"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasEventName"/>
-        <Class IRI="#Event"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasEventName"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#Event"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasId"/>
-        <Class IRI="#Person"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasId"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasStartTime"/>
-        <Class IRI="#Event"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasStartTime"/>
+        <Class IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#Event"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="#hasEndTime"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasEndTime"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasEventName"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasEventName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasId"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasId"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#hasStartTime"/>
+        <DataProperty IRI="http://www.semanticweb.org/dragan/ontologies/2020/10/event-ontology#hasStartTime"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
 </Ontology>
