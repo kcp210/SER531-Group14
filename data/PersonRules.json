@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Person","startColumn":"A","endColumn":"A","startRow":"2","endRow":"+","comment":"","rule":"Individual: @A*\nTypes: Person\nFacts: \thasFirstName @B*,\n\thasLastName @C*,\n\thasPhoneNumber @D*,\n\thasGender @E*,\n\thasDateOfBirth @F*,\n\thasId @A*","active":true}]}
