@@ -1,6 +1,6 @@
 package View;
 
-import Controller.InputPanelListener;
+import Controller.Controller;
 
 import javax.swing.*;
 
@@ -15,8 +15,6 @@ public class InputPanel extends JPanel {
         nameTextField = new JTextField("", 30);
         submitButton = new JButton("Submit");
 
-        submitButton.addActionListener(new InputPanelListener(this));
-
         add(nameLabel);
         add(nameTextField);
         add(submitButton);
@@ -24,5 +22,9 @@ public class InputPanel extends JPanel {
 
     public JTextField getNameTextField() {
         return nameTextField;
+    }
+
+    public JButton getSubmitButton() {
+        return submitButton;
     }
 }

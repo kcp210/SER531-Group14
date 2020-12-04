@@ -12,12 +12,12 @@ public class MainFrame extends JFrame {
         super(title);
         getContentPane().setLayout(new BorderLayout());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(1000,1000);
+        setSize(500,1000);
 
         inputPanel = new InputPanel();
         resultsPanel = new ResultsPanel();
 
-        resultsPanel.setPreferredSize(new Dimension(500, 500));
+        resultsPanel.setPreferredSize(new Dimension(500, 900));
 
         getContentPane().add(inputPanel, BorderLayout.PAGE_START);
         getContentPane().add(resultsPanel, BorderLayout.CENTER);
@@ -26,4 +26,11 @@ public class MainFrame extends JFrame {
         setVisible(true);
     }
 
+    public InputPanel getInputPanel() {
+        return inputPanel;
+    }
+
+    public ResultsPanel getResultsPanel() {
+        return resultsPanel;
+    }
 }
