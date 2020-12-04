@@ -1,27 +1,45 @@
 package View;
 
-import Controller.Controller;
-
 import javax.swing.*;
 
 public class InputPanel extends JPanel {
 
-    private JLabel nameLabel;
-    private JTextField nameTextField;
+    private JLabel firstNameLabel;
+    private JTextField firstNameTextField;
+    private JLabel lastNameLabel;
+    private JTextField lastNameTextField;
+    private JLabel dobLabel;
+    private JTextField dobTextField;
     private JButton submitButton;
 
     public InputPanel() {
-        nameLabel = new JLabel("Enter name: ");
-        nameTextField = new JTextField("", 30);
+        firstNameLabel = new JLabel("Enter first name: ");
+        firstNameTextField = new JTextField("", 15);
+        lastNameLabel = new JLabel("Enter last name: ");
+        lastNameTextField = new JTextField("", 15);
+        dobLabel = new JLabel("Enter date of birth: ");
+        dobTextField = new JTextField("", 10);
         submitButton = new JButton("Submit");
 
-        add(nameLabel);
-        add(nameTextField);
+        add(firstNameLabel);
+        add(firstNameTextField);
+        add(lastNameLabel);
+        add(lastNameTextField);
+        add(dobLabel);
+        add(dobTextField);
         add(submitButton);
     }
 
-    public JTextField getNameTextField() {
-        return nameTextField;
+    public String getFirstName() {
+        return firstNameTextField.getText();
+    }
+
+    public String getLastName() {
+        return lastNameTextField.getText();
+    }
+
+    public String getDob() {
+        return dobTextField.getText();
     }
 
     public JButton getSubmitButton() {

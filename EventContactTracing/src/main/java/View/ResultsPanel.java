@@ -62,14 +62,20 @@ public class ResultsPanel extends JPanel {
         if (person.getAge() > 50)
             risk++;
 
-        if(person.getMedicalConditions() != "None")
+        if(!person.getMedicalConditions().equals("None"))
             risk++;
 
         if(risk == 2)
             immediateContactHighRiskTable.addRowOfData(person);
         else if (risk == 1)
             immediateContactMediumRiskTable.addRowOfData(person);
-        else if (risk == 2)
+        else if (risk == 0)
             immediateContactLowRiskTable.addRowOfData(person);
+    }
+
+    public void clearAllTables() {
+        immediateContactHighRiskTable.clear();
+        immediateContactMediumRiskTable.clear();
+        immediateContactLowRiskTable.clear();
     }
 }
